@@ -1,0 +1,112 @@
+/* FOOTER */
+.pie {
+    background: #FF0400;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.pie-contenedor {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.pie-columna-info {
+    flex: 1.5;
+    min-width: 250px;
+}
+
+.pie-columna-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.pie-columna-info p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    max-width: 280px;
+}
+
+.pie-columna {
+    flex: 1;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pie-columna h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.pie-columna a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.3s;
+}
+
+.pie-columna a:hover {
+    opacity: 0.7;
+}
+
+/* SUSCRIPCIÓN */
+.pie-columna-suscripcion {
+    flex: 1.5;
+    min-width: 250px;
+}
+
+.pie-columna-suscripcion h4 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.suscripcion-formulario {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.suscripcion-formulario input {
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    flex: 1;
+    font-size: 0.9rem;
+    max-width: 200px;
+}
+
+.suscripcion-formulario button {
+    background: white;
+    color: #FF0400;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+.pie-inferior {
+    text-align: center;
+    padding: 40px 0 10px 0;
+    font-size: 0.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
