@@ -26,14 +26,14 @@
                 <a href="#">TODOS</a>
                 <a href="#">FEMENINO</a>
                 <a href="#">MASCULINO</a>
-                <a href="#">INFANTIL</a>
+                <a href="#">NIÑOS</a>
                 <a href="#">CONÓCENOS</a>
             </nav>
             <nav class="menu-extra">
-                <a href="#">Inicio</a>
-                <a href="#">Catálogo</a>
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
                 <a href="#">Contacto</a>
-                <a href="#">Buscar</a>
+                <a href="buscar.html">Buscar</a>
             </nav>
 
             <nav class="redes-sociales-movil">
@@ -44,10 +44,10 @@
 
     <div class="barra-superior">
         <nav class="menu-superior">
-            <a href="#">Inicio</a>
-            <a href="#">Catálogo</a>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
             <a href="#">Contacto</a>
-            <a href="#">Buscar</a>
+            <a href="buscar.html">Buscar</a>
         </nav>
 
         <nav class="redes-sociales">
@@ -77,10 +77,10 @@
             <h2 class="logo">ÓPTICA TENDENCIA URBANA</h2>
 
             <nav class="categorias">
-                <a href="#">TODOS</a>
-                <a href="#">FEMENINO</a>
-                <a href="#">MASCULINO</a>
-                <a href="#">INFANTIL</a>
+                <a href="catalogo.html">TODOS</a>
+                <a href="catalogo-FEMENINO.html">FEMENINO</a>
+                <a href="catalogo-MASCULINO.html">MASCULINO</a>
+                <a href="catalogo-INFANTIL.html">NIÑOS</a>
                 <a href="#">CONÓCENOS</a>
             </nav>
         </div>
@@ -218,40 +218,52 @@
 
 </main>
 
-<footer>
-    <div class="pie">
-        <div class="pie-contenedor">
-            <div class="pie-columna-info">
-                <h3>ÓPTICA TENDENCIA URBANA</h3>
-                <p>Lentes modernos, calidad garantizada y estilo urbano.</p>
-            </div>
+<!-- FOOTER -->
+<footer class="pie">
+    <div class="pie-contenedor">
 
-            <div class="pie-columna">
-                <h4>TIENDA</h4>
-                <a href="#">Catálogo</a>
-                <a href="#">Novedades</a>
-                <a href="#">Ofertas</a>
-            </div>
-
-            <div class="pie-columna">
-                <h4>AYUDA</h4>
-                <a href="#">Contacto</a>
-                <a href="#">Envíos</a>
-                <a href="#">Devoluciones</a>
-            </div>
-
-            <div class="pie-columna-suscripcion">
-                <h4>SUSCRÍBETE</h4>
-                <div class="suscripcion-formulario">
-                    <input type="email" placeholder="prueba@gmail.com">
-                    <button type="button">OK</button>
-                </div>
-            </div>
+        <div class="pie-columna">
+            <h3>ÓPTICA TENDENCIA URBANA</h3>
+            <p>Lentes modernos, calidad garantizada y estilo urbano.</p>
         </div>
-        <div class="pie-inferior">
-            <p>&copy; 2026 Óptica Tendencia Urbana</p>
+
+        <div class="pie-columna">
+            <h4>Tienda</h4>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="#">Novedades</a>
+            <a href="#">Ofertas</a>
         </div>
+
+        <div class="pie-columna">
+            <h4>Ayuda</h4>
+            <a href="#">Contacto</a>
+            <a href="#">Envíos</a>
+            <a href="#">Devoluciones</a>
+            <a href="#">Privacidad</a>
+        </div>
+
+        <div class="pie-columna">
+            <h4>Suscríbete</h4>
+            <form class="suscripcion" id="formSuscripcion" novalidate>
+                <label for="emailSuscripcion" class="sr-only">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="emailSuscripcion"
+                    name="email"
+                    placeholder="correo@gmail.com"
+                    required
+                    autocomplete="email"
+                >
+                <button type="submit">OK</button>
+            </form>
+        </div>
+
     </div>
+
+    <div class="pie-inferior">
+        <p>&copy; 2026 Óptica Tendencia Urbana</p>
+    </div>
+
 </footer>
 
 <script src="inicio.js/inicio.js"></script>
