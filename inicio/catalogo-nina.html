@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="inicio.css/slider.css">
     <link rel="stylesheet" href="inicio.css/footer.css">
     <link rel="stylesheet" href="inicio.css/responcividad.css">
+    <link rel="stylesheet" type="text/css" href="inicio.css/estilo-catalogo.css">
 </head>
 
 <body>
@@ -106,7 +107,6 @@
 
 <main class="contenedor-principal">
     
-
     <section class="seccion-catalogo" id="seccion-catalogo">
         <h2 class="titulo-seccion">CATÁLOGO</h2>
         <div class="grid-categorias-inicio">
@@ -136,91 +136,50 @@
             </div>
         </div>
     </section>
+  
+<!-- Producto 2 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-mujeres/123-ROSADO.webp" alt="Lente Femenino">
+    </div>
+    <h4>SOFT PINK STYLE</h4>
+    <span class="precio">Bs 210.00</span>
+</article>
+<!-- Producto 3 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-mujeres/90-ROJO.webp" alt="Lente Femenino">
+    </div>
+    <h4>CHIC CRIMSON</h4>
+    <span class="precio">Bs 240.00</span>
+</article>
+<!-- Producto 4 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-ninos/0003.webp" alt="Lente Femenino">
+    </div>
+    <h4>PREMIUM NOIR</h4>
+    <span class="precio">Bs 280.00</span>
+</article>
+<!-- Producto 5 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-mujeres/90ROJO.webp" alt="Lente Femenino">
+    </div>
+    <h4>URBAN CAT RED</h4>
+    <span class="precio">Bs 225.00</span>
+</article>
+<!-- Producto 6 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-mujeres/118-ROSADA-NEGRA.webp" alt="Lente Femenino">
+    </div>
+    <h4>MODERN DUALITY</h4>
+    <span class="precio">Bs 235.00</span>
+</article>
+    
 
     
-    <section class="seccion-info">
-        <h2 class="titulo-seccion">¿Por qué escoger Óptica Tendencia Urbana?</h2>
-        <div class="info-contenido">
-            <p>En Óptica Tendencia Urbana nos comprometemos con tu salud visual ofreciendo tecnología de punta, diseños exclusivos y una atención personalizada que garantiza la mejor solución para tus ojos.</p>
-        </div>
-    </section>
-
-  
-    <!--  SECCIÓN mujeres -->
-    <section class="seccion-productos" id="seccion-mujeres">
-        <h2 class="titulo-seccion">MUJERES</h2>
-        <div class="grid-productos">
-            <div class="producto-card">
-                <img src="img/gafas-mujeres/118-ROSADA-NEGRA.webp">
-                <p class="precio">Bs 120.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-mujeres/123-ROSADO.webp">
-                <p class="precio">Bs 135.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-mujeres/90-ROJO.webp">
-                <p class="precio">Bs  110.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-mujeres/90ROJO.webp">
-                <p class="precio">Bs 115.00</p>
-            </div>
-        </div>
-    </section>
-
-    <!--  SECCIÓN VARONES -->
-    <section class="seccion-productos" id="seccion-varones">
-        <h2 class="titulo-seccion">VARONES</h2>
-        <div class="grid-productos">
-            <div class="producto-card">
-                <img src="img/gafas-varones/61-azul-verde.webp">
-                <p class="precio">Bs 140.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-varones/SATELLITE-PLATA-NEGRA.webp">
-                <p class="precio">Bs 160.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-varones/WESTON-DORADA-CAFE.webp">
-                <p class="precio">Bs 155.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-varones/negros.webp">
-                <p class="precio">Bs 130.00</p>
-            </div>
-        </div>
-    </section>
-
-    <!--  SECCIÓN NIÑAS -->
-    <section class="seccion-productos" id="seccion-ninas">
-        <h2 class="titulo-seccion">NIÑAS</h2>
-        <div class="grid-productos">
-            <div class="producto-card">
-                <img src="img/gafas-ninos/0001.webp">
-                <p class="precio">Bs 285.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-ninos/0002.webp">
-                <p class="precio">Bs 290.00</p>
-            </div>
-        </div>
-    </section>
-
-    <!--  SECCIÓN NIÑOS -->
-    <section class="seccion-productos" id="seccion-ninos">
-        <h2 class="titulo-seccion">NIÑOS</h2>
-        <div class="grid-productos">
-            <div class="producto-card">
-                <img src="img/gafas-ninos/0003.webp">
-                <p class="precio">Bs 185.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-ninos/0004.webp">
-                <p class="precio">Bs 180.00</p>
-            </div>
-        </div>
-    </section>
 
 </main>
 
@@ -259,8 +218,14 @@
         </div>
     </div>
 </footer>
-
+<!-- Contenedor único para la lupa/zoom -->
+<div id="modal-lupa" class="modal-zoom">
+    <span class="cerrar-lupa">&times;</span>
+    <div class="contenedor-lupa">
+        <img id="imagen-zoom" src="" alt="Vista previa">
+    </div>
+</div>
+<script src="inicio.js/catalogo.js"></script>
 <script src="inicio.js/inicio.js"></script>
-
 </body>
 </html>
