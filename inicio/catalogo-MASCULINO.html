@@ -153,35 +153,48 @@
 
 <!-- FOOTER -->
 <footer class="pie">
-
     <div class="pie-contenedor">
 
         <div class="pie-columna">
             <h3>ÓPTICA TENDENCIA URBANA</h3>
-            <p>Tu mejor opción en lentes de calidad.</p>
+            <p>Lentes modernos, calidad garantizada y estilo urbano.</p>
         </div>
 
         <div class="pie-columna">
-            <h4>ENLACES</h4>
-            <a href="#">Inicio</a>
+            <h4>Tienda</h4>
             <a href="catalogo.html">Catálogo</a>
-            <a href="#">Contacto</a>
+            <a href="#">Novedades</a>
+            <a href="#">Ofertas</a>
         </div>
 
         <div class="pie-columna">
-            <h4>SUSCRÍBETE</h4>
-            <p>Recibe ofertas y novedades</p>
+            <h4>Ayuda</h4>
+            <a href="#">Contacto</a>
+            <a href="#">Envíos</a>
+            <a href="#">Devoluciones</a>
+            <a href="#">Privacidad</a>
+        </div>
 
-            <div class="suscripcion">
-                <input type="email" placeholder="correo@gmail.com">
-                <button>Suscribir</button>
-            </div>
+        <div class="pie-columna">
+            <h4>Suscríbete</h4>
+            <form class="suscripcion" id="formSuscripcion" novalidate>
+                <label for="emailSuscripcion" class="sr-only">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="emailSuscripcion"
+                    name="email"
+                    placeholder="correo@gmail.com"
+                    required
+                    autocomplete="email"
+                >
+                <button type="submit">OK</button>
+            </form>
         </div>
 
     </div>
 
     <div class="pie-inferior">
-        <p>© 2026 Óptica Pouker</p>
+        <p>&copy; 2026 Óptica Tendencia Urbana</p>
     </div>
 
 </footer>

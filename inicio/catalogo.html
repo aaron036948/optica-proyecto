@@ -21,7 +21,7 @@
         <label for="menu-toggle" class="cerrar">✕</label>
 
         <nav class="menu-categorias">
-            <a href="#">TODOS</a>
+            <a href="catalogo.html">TODOS</a>
             <a href="catalogo-FEMENINO.html">FEMENINO</a>
             <a href="catalogo-MASCULINO.html">MASCULINO</a>
             <a href="catalogo-INFANTIL.html">NIÑOS</a>
@@ -29,8 +29,8 @@
         </nav>
 
         <div class="menu-extra">
-            <a href="#">Inicio</a>
-            <a href="#">Catálogo</a>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
             <a href="#">Contacto</a>
         </div>
     </div>
@@ -38,8 +38,8 @@
     <!-- BARRA SUPERIOR -->
     <div class="barra-superior">
         <nav class="menu-superior">
-            <a href="#">Inicio</a>
-            <a href="#">Catálogo</a>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
             <a href="#">Contacto</a>
         </nav>
 
@@ -65,7 +65,7 @@
             <h2 class="logo">ÓPTICA TENDENCIA URBANA</h2>
 
             <nav class="categorias">
-                <a href="#">TODOS</a>
+                <a href="catalogo.html">TODOS</a>
                 <a href="catalogo-FEMENINO.html">FEMENINO</a>
                 <a href="catalogo-MASCULINO.html">MASCULINO</a>
                 <a href="catalogo-INFANTIL.html">NIÑOS</a>
@@ -87,19 +87,19 @@
     <section id="todocata">
         <!-- Card 1: GAFA -->
         <div class="catalogo1">
-            <img src="img\gafas-unisex\001.webp" alt="Gafas en Oferta">
+            <img src="img/gafas-unisex/001.webp" alt="Gafas en Oferta">
             <h3>OFERTA</h3>
         </div>
 
         <!-- Card 2: GAFA -->
         <div class="catalogo2">
-            <img src="img\gafas-unisex\003.webp" alt="Gafas en Oferta">
+            <img src="img/gafas-unisex/003.webp" alt="Gafas en Oferta">
             <h3>OFERTA</h3>
         </div>
 
         <!-- Card 3: GAFA -->
         <div class="catalogo3">
-            <img src="img\gafas-unisex\005.webp" alt="Gafas en Oferta">
+            <img src="img/gafas-unisex/005.webp" alt="Gafas en Oferta">
             <h3>OFERTA</h3>
         </div>
 
@@ -133,35 +133,48 @@
 
 <!-- FOOTER -->
 <footer class="pie">
-
     <div class="pie-contenedor">
 
         <div class="pie-columna">
             <h3>ÓPTICA TENDENCIA URBANA</h3>
-            <p>Tu mejor opción en lentes de calidad.</p>
+            <p>Lentes modernos, calidad garantizada y estilo urbano.</p>
         </div>
 
         <div class="pie-columna">
-            <h4>ENLACES</h4>
-            <a href="#">Inicio</a>
+            <h4>Tienda</h4>
             <a href="catalogo.html">Catálogo</a>
-            <a href="#">Contacto</a>
+            <a href="#">Novedades</a>
+            <a href="#">Ofertas</a>
         </div>
 
         <div class="pie-columna">
-            <h4>SUSCRÍBETE</h4>
-            <p>Recibe ofertas y novedades</p>
+            <h4>Ayuda</h4>
+            <a href="#">Contacto</a>
+            <a href="#">Envíos</a>
+            <a href="#">Devoluciones</a>
+            <a href="#">Privacidad</a>
+        </div>
 
-            <div class="suscripcion">
-                <input type="email" placeholder="correo@gmail.com">
-                <button>Suscribir</button>
-            </div>
+        <div class="pie-columna">
+            <h4>Suscríbete</h4>
+            <form class="suscripcion" id="formSuscripcion" novalidate>
+                <label for="emailSuscripcion" class="sr-only">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="emailSuscripcion"
+                    name="email"
+                    placeholder="correo@gmail.com"
+                    required
+                    autocomplete="email"
+                >
+                <button type="submit">OK</button>
+            </form>
         </div>
 
     </div>
 
     <div class="pie-inferior">
-        <p>© 2026 Óptica Pouker</p>
+        <p>&copy; 2026 Óptica Tendencia Urbana</p>
     </div>
 
 </footer>
