@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="inicio.css/slider.css">
     <link rel="stylesheet" href="inicio.css/footer.css">
     <link rel="stylesheet" href="inicio.css/responcividad.css">
-    <link rel="stylesheet" href="inicio.css/estilo-catalogo.css">
+    <link rel="stylesheet" type="text/css" href="inicio.css/estilo-catalogo.css">
 </head>
 
 <body>
@@ -24,20 +24,19 @@
 
             <!-- contenido de menu-movil -->
             <nav class="menu-categorias">
-                <a href="catalogo.html">TODOS</a>
-                <a href="catalogo-FEMENINO.html">FEMENINO</a>
-                <a href="catalogo-MASCULINO.html">MASCULINO</a>
-                <a href="catalogo-INFANTIL.html">INFANTIL</a>
+                <a href="#">TODOS</a>
+                <a href="#">FEMENINO</a>
+                <a href="#">MASCULINO</a>
+                <a href="#">INFANTIL</a>
                 <a href="#">CONÓCENOS</a>
             </nav>
             <nav class="menu-extra">
                 <a href="#">Inicio</a>
-                <a href="catalogo.html">Catálogo</a>
+                <a href="catalogo-INFANTIL.html">Catálogo</a>
                 <a href="#">Contacto</a>
                 <a href="#">Buscar</a>
             </nav>
 
-           
             <nav class="redes-sociales-movil">
                 <a href="#"><img src="iconos/instagram.png" alt="Instagram"></a>
                 <a href="#"><img src="iconos/facebook.png" alt="Facebook"></a>
@@ -47,14 +46,14 @@
     <div class="barra-superior">
         <nav class="menu-superior">
             <a href="#">Inicio</a>
-            <a href="catalogo.html">Catálogo</a>
+            <a href="#">Catálogo</a>
             <a href="#">Contacto</a>
             <a href="#">Buscar</a>
         </nav>
 
         <nav class="redes-sociales">
-            <a href="https://www.instagram.com/"><img src="iconos/instagram.png"></a>
-            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi3uJX9sKWUAxW_lJUCHaz5Og4QFnoECA4QAQ&url=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA&usg=AOvVaw1I60-Ja6y72-wCvsxEihv7&opi=89978449"><img src="iconos/facebook.png"></a>
+            <img src="iconos/instagram.png">
+            <img src="iconos/facebook.png">
         </nav>
     </div>
 
@@ -79,19 +78,17 @@
             <h2 class="logo">ÓPTICA TENDENCIA URBANA</h2>
 
             <nav class="categorias">
-                <a href="catalogo.html">TODOS</a>
-                <a href="catalogo-FEMENINO.html">FEMENINO</a>
-                <a href="catalogo-MASCULINO.html">MASCULINO</a>
-                <a href="catalogo-INFANTIL.html">INFANTIL</a>
+                <a href="#">TODOS</a>
+                <a href="#">FEMENINO</a>
+                <a href="#">MASCULINO</a>
+                <a href="#">INFANTIL</a>
                 <a href="#">CONÓCENOS</a>
             </nav>
         </div>
 
         <div class="iconos">
             <img src="iconos/favorito.png">
-            <a href="login.html">
-                <img src="iconos/login.png">
-            </a>
+            <img src="iconos/login.png">
             <img src="iconos/compra.png">
         </div>
 
@@ -110,70 +107,79 @@
 
 <main class="contenedor-principal">
     
-
-  <!-- SECCIÓN DE CATÁLOGO COMPLETO -->
-<section id="todocata" class="class-section">
+    <section class="seccion-catalogo" id="seccion-catalogo">
+        <h2 class="titulo-seccion">CATÁLOGO</h2>
+        <div class="grid-categorias-inicio">
+            <div class="categoria-item">
+                <a href="catalogo-INFANTIL.html">
+                <img src="img/gafas-ninos/0001.webp" alt="Niños">
+                <span>NIÑOS</span>
+                </a>
+            </div>
+            <div class="categoria-item">
+                <a href="catalogo-nina.html">
+                <img src="img/gafas-ninos/0002.webp" alt="Niñas">
+                <span>NIÑAS</span>
+                </a>
+            </div>
+            <div class="categoria-item">
+                <a href="catalogo-FEMENINO.html">
+                <img src="img/gafas-mujeres/118-ROSADA-NEGRA.webp" alt="Mujeres">
+                <span>MUJERES</span>
+                </a>
+            </div>
+            <div class="categoria-item">
+                <a href="catalogo-MASCULINO.html">
+                <img src="img/gafas-varones/negros.webp" alt="Varones">
+                <span>VARONES</span>
+                </a>
+            </div>
+        </div>
+    </section>
+  
+<!-- Producto 2 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-mujeres/123-ROSADO.webp" alt="Lente Femenino">
+    </div>
+    <h4>SOFT PINK STYLE</h4>
+    <span class="precio">Bs 210.00</span>
+</article>
+<!-- Producto 3 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-mujeres/90-ROJO.webp" alt="Lente Femenino">
+    </div>
+    <h4>CHIC CRIMSON</h4>
+    <span class="precio">Bs 240.00</span>
+</article>
+<!-- Producto 4 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-ninos/0003.webp" alt="Lente Femenino">
+    </div>
+    <h4>PREMIUM NOIR</h4>
+    <span class="precio">Bs 280.00</span>
+</article>
+<!-- Producto 5 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-mujeres/90ROJO.webp" alt="Lente Femenino">
+    </div>
+    <h4>URBAN CAT RED</h4>
+    <span class="precio">Bs 225.00</span>
+</article>
+<!-- Producto 6 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-mujeres/118-ROSADA-NEGRA.webp" alt="Lente Femenino">
+    </div>
+    <h4>MODERN DUALITY</h4>
+    <span class="precio">Bs 235.00</span>
+</article>
     
-    <!-- APARTADO: OFERTAS -->
-    <h2 class="titulo-apartado">Grandes Novedades</h2>
-    <div class="apartado-especial grid-ofertas">
-        <article class="class-catalogo">
-            <img src="img/gafas-unisex/001.webp" alt="Lente en Oferta">
-            <div class="etiqueta-oferta">OFERTA -50%</div>
-            <h3>URBAN STYLE</h3>
-        </article>
-        <article class="class-catalogo">
-            <img src="img/gafas-unisex/003.webp" alt="Lente en Oferta">
-            <div class="etiqueta-oferta">OFERTA -45%</div>
-            <h3>CITY LIGHTS</h3>
-        </article>
-        <article class="class-catalogo">
-            <img src="img/gafas-unisex/005.webp" alt="Lente en Oferta">
-            <div class="etiqueta-oferta">OFERTA -45%</div>
-            <h3>NIGHT DRIVE</h3>
-        </article>
-    </div>
 
-    <!-- APARTADO: EN REBAJA -->
-    <h2 class="titulo-apartado">Ofertas</h2>
-    <div class="apartado-especial grid-rebajas">
-        <article class="class-catalogo">
-            <img src="img/gafas-varones/negros.webp" alt="Lente en Rebaja">
-            <div class="etiqueta-rebaja">REBAJA</div>
-            <h3>CLASSIC BLACK</h3>
-        </article>
-        <article class="class-catalogo">
-            <img src="img/gafas-mujeres/90ROJO.webp" alt="Lente en Rebaja">
-            <div class="etiqueta-rebaja">REBAJA</div>
-            <h3>RED PASSION</h3>
-        </article>
-    </div>
-
-    <hr class="separador-seccion">
-
-    <!-- GRILLA DE COLECCIONES -->
-    <h2 class="titulo-apartado">Nuestras Colecciones</h2>
-    <div class="grid-principal">
-        <div class="class-catalogo">
-            <a class="link-card" href="catalogo-MASCULINO.html">
-                <img src="img/gafas-varones/WESTON-DORADA-CAFE.webp" alt="Gafas para Hombres">
-                <h3>HOMBRES</h3>
-            </a>
-        </div>
-        <div class="class-catalogo">
-            <a class="link-card" href="catalogo-FEMENINO.html">
-                <img src="img/gafas-mujeres/90-ROJO.webp" alt="Gafas para Mujeres">
-                <h3>MUJERES</h3>
-            </a>
-        </div>
-        <div class="class-catalogo">
-            <a class="link-card" href="catalogo-INFANTIL.html">
-                <img src="img/gafas-ninos/0004.webp" alt="Gafas Infantiles">
-                <h3>INFANTILES</h3>
-            </a>
-        </div>
-    </div>
-</section>
+    
 
 </main>
 
@@ -187,7 +193,7 @@
 
             <div class="pie-columna">
                 <h4>TIENDA</h4>
-                <a href="catalogo.html">Catálogo</a>
+                <a href="catalogo-INFANTIL.html">Catálogo</a>
                 <a href="#">Novedades</a>
                 <a href="#">Ofertas</a>
             </div>
@@ -212,8 +218,14 @@
         </div>
     </div>
 </footer>
-
+<!-- Contenedor único para la lupa/zoom -->
+<div id="modal-lupa" class="modal-zoom">
+    <span class="cerrar-lupa">&times;</span>
+    <div class="contenedor-lupa">
+        <img id="imagen-zoom" src="" alt="Vista previa">
+    </div>
+</div>
+<script src="inicio.js/catalogo.js"></script>
 <script src="inicio.js/inicio.js"></script>
-
 </body>
 </html>

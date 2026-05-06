@@ -3,186 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Óptica Pouker</title>
-    <link rel="stylesheet" href="css/estilo-catalogo.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Óptica Tendencia Urbana</title>
+
+    <link rel="stylesheet" href="inicio.css/estilos.css">
+    <link rel="stylesheet" href="inicio.css/header.css">
+    <link rel="stylesheet" href="inicio.css/slider.css">
+    <link rel="stylesheet" href="inicio.css/footer.css">
+    <link rel="stylesheet" href="inicio.css/responcividad.css">
+<<<<<<< Updated upstream
+    <link rel="stylesheet" type="text/css" href="inicio.css/estilo-catalogo.css">
+=======
+    <link rel="stylesheet" href="inicio.css/estilo-catalogo.css">
+>>>>>>> Stashed changes
 </head>
+
 <body>
 
-<!-- HEADER -->
-<header class="encabezado">
+<header>
+    <input type="checkbox" id="menu-toggle"><!-- ACTIVAR MENU-MOVIl -->
+    <div class="capa-oscura"></div>
 
-    <!-- BOTÓN MENÚ MÓVIL -->
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="boton-menu">☰</label>
+    <div class="menu-movil" id="menu-desplegable">
+        <label for="menu-toggle" class="cerrar" id="boton-cerrar-menu">✕</label>
 
-    <!-- MENÚ MÓVIL -->
-    <div class="menu-movil">
-        <label for="menu-toggle" class="cerrar">✕</label>
+            <!-- contenido de menu-movil -->
+            <nav class="menu-categorias">
+<<<<<<< Updated upstream
+                <a href="#">TODOS</a>
+                <a href="#">FEMENINO</a>
+                <a href="#">MASCULINO</a>
+                <a href="#">INFANTIL</a>
+=======
+                <a href="catalogo.html">TODOS</a>
+                <a href="catalogo-FEMENINO.html">FEMENINO</a>
+                <a href="catalogo-MASCULINO.html">MASCULINO</a>
+                <a href="catalogo-INFANTIL.html">INFANTIL</a>
+>>>>>>> Stashed changes
+                <a href="#">CONÓCENOS</a>
+            </nav>
+            <nav class="menu-extra">
+                <a href="#">Inicio</a>
+<<<<<<< Updated upstream
+                <a href="catalogo-INFANTIL.html">Catálogo</a>
+=======
+                <a href="catalogo.html">Catálogo</a>
+>>>>>>> Stashed changes
+                <a href="#">Contacto</a>
+                <a href="#">Buscar</a>
+            </nav>
 
-        <nav class="menu-categorias">
-            <a href="catalogo.html">TODOS</a>
-            <a href="#">FEMENINO</a>
-            <a href="catalogo-MASCULINO.html">MASCULINO</a>
-            <a href="catalogo-INFANTIL.html">INFANTIL</a>
-            <a href="#">CONÓCENOS</a>
-        </nav>
-
-        <div class="menu-extra">
-            <a href="#">Inicio</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="#">Contacto</a>
-        </div>
+            <nav class="redes-sociales-movil">
+                <a href="#"><img src="iconos/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="iconos/facebook.png" alt="Facebook"></a>
+            </nav>
     </div>
 
-    <!-- BARRA SUPERIOR -->
     <div class="barra-superior">
         <nav class="menu-superior">
             <a href="#">Inicio</a>
-            <a href="catalogo.html">Catálogo</a>
+            <a href="#">Catálogo</a>
             <a href="#">Contacto</a>
+            <a href="#">Buscar</a>
         </nav>
 
-        <div class="redes-sociales">
-            <img src="img/iconos/instagram.png" alt="">
-            <img src="img/iconos/facebook.png" alt="">
-        </div>
+        <nav class="redes-sociales">
+<<<<<<< Updated upstream
+            <img src="iconos/instagram.png">
+            <img src="iconos/facebook.png">
+=======
+            <a href="https://www.instagram.com/"><img src="iconos/instagram.png"></a>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi3uJX9sKWUAxW_lJUCHaz5Og4QFnoECA4QAQ&url=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA&usg=AOvVaw1I60-Ja6y72-wCvsxEihv7&opi=89978449"><img src="iconos/facebook.png"></a>
+>>>>>>> Stashed changes
+        </nav>
     </div>
 
-    <!-- BARRA PRINCIPAL -->
     <div class="barra-principal">
 
-        <!-- BUSCADOR -->
-        <div class="buscador">
-            <label for="buscar">
-                <img src="img/iconos/lupa.png" class="icono">
-            </label>
-            <input type="text" id="buscar" placeholder="Buscar..." class="entrada-busqueda">
+        <label for="menu-toggle" class="boton-menu">☰</label>
+
+        <div class="contenedor-buscador">
+            <div class="buscador" id="activar-busqueda">
+                <img src="iconos/lupa.png" class="icono">
+            </div>
+
+            <!-- Capa del buscador que cubre el header -->
+            <div class="buscador-expandido" id="buscador-pantalla-completa">
+                <button class="boton-atras" id="cerrar-busqueda">←</button>
+                <input type="text" placeholder="Buscar productos..." class="entrada-busqueda-completa">
+                <img src="iconos/lupa.png" class="icono-busqueda">
+            </div>
         </div>
 
-        <!-- CENTRO -->
         <div class="centro">
-            <h2 class="logo">ÓPTICA POUKER</h2>
+            <h2 class="logo">ÓPTICA TENDENCIA URBANA</h2>
 
             <nav class="categorias">
-                <a href="catalogo.html">TODOS</a>
+<<<<<<< Updated upstream
+                <a href="#">TODOS</a>
                 <a href="#">FEMENINO</a>
+                <a href="#">MASCULINO</a>
+                <a href="#">INFANTIL</a>
+=======
+                <a href="catalogo.html">TODOS</a>
+                <a href="catalogo-FEMENINO.html">FEMENINO</a>
                 <a href="catalogo-MASCULINO.html">MASCULINO</a>
                 <a href="catalogo-INFANTIL.html">INFANTIL</a>
+>>>>>>> Stashed changes
                 <a href="#">CONÓCENOS</a>
             </nav>
         </div>
 
-        <!-- ICONOS -->
         <div class="iconos">
-            <img src="img/iconos/favorito.png" alt="">
-            <img src="img/iconos/login.png" alt="">
-            <img src="img/iconos/compra.png" alt="">
+            <img src="iconos/favorito.png">
+<<<<<<< Updated upstream
+            <img src="iconos/login.png">
+=======
+            <a href="login.html">
+                <img src="iconos/login.png">
+            </a>
+>>>>>>> Stashed changes
+            <img src="iconos/compra.png">
         </div>
 
     </div>
 </header>
 
-    <!-- SECCIÓN DE CATEGORÍA ESPECÍFICA (EJ: MUJERES) -->
-    <section id="categoria-mujeres">
-        
-        <!-- Banner Principal -->
-        <div class="banner-categoria">
-            <img src="img\femenino_1_c6f75115-7b70-4c37-bd74-36939a399e89_1080x.webp" alt="Promoción para ella">
-            <div class="texto-banner">
-                <h2>PARA ELLA</h2>
-                <p>Las mejores opciones en gafas y monturas</p>
+<!-- 🔥 SLIDER DE ANCHO COMPLETO -->
+<section class="hero-slider">
+    <img src="img/presentacion/imagen1.jpg" class="slide active">
+    <img src="img/presentacion/imagen2.jpg" class="slide">
+    <img src="img/presentacion/imagen3.jpg" class="slide">
+
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+</section>
+
+<main class="contenedor-principal">
+<<<<<<< Updated upstream
+ 
+    <section class="seccion-catalogo" id="seccion-catalogo">
+        <h2 class="titulo-seccion">CATÁLOGO</h2>
+        <div class="grid-categorias-inicio">
+            <div class="categoria-item">
+                <a href="catalogo-INFANTIL.html">
+                <img src="img/gafas-ninos/0001.webp" alt="Niños">
+                <span>NIÑOS</span>
+                </a>
+            </div>
+            <div class="categoria-item">
+                <a href="catalogo-nina.html">
+                <img src="img/gafas-ninos/0002.webp" alt="Niñas">
+                <span>NIÑAS</span>
+                </a>
+            </div>
+            <div class="categoria-item">
+                <a href="catalogo-FEMENINO.html">
+                <img src="img/gafas-mujeres/118-ROSADA-NEGRA.webp" alt="Mujeres">
+                <span>MUJERES</span>
+                </a>
+            </div>
+            <div class="categoria-item">
+                <a href="catalogo-MASCULINO.html">
+                <img src="img/gafas-varones/negros.webp" alt="Varones">
+                <span>VARONES</span>
+                </a>
             </div>
         </div>
+    </section>
 
-        <!-- Descripciones intermadias -->
-        <div class="descripcion-filtros">
-            <h3>Puedes filtrar los productos por Precio, Formato, Tamaño, Color, Tipo, Material, etc.</h3>
-            <p>Selecciona tu producto favorito, compra sin salir de casa y recibe tus lentes con Envío Gratuito a toda Bolivia. También puedes probarte los productos que quieras con nuestro <a>Servicio a domicilio gratuito</a>.</p>
-        </div>
+<!-- Producto 2 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-unisex/001.webp" alt="Lente Femenino">
+    </div>
+    <h4>Rectangular Gris Mármol</h4>
+    <span class="precio">Bs 210.00</span>
+</article>
+<!-- Producto 3 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-unisex/002.webp" alt="Lente Femenino">
+    </div>
+    <h4>Rectangular Gris Márron</h4>
+    <span class="precio">Bs 240.00</span>
+</article>
+<!-- Producto 4 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-unisex/003.webp" alt="Lente Femenino">
+    </div>
+    <h4> Rectangular Gris Cristal</h4>
+    <span class="precio">Bs 280.00</span>
+</article>
+<!-- Producto 5 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-unisex/004.webp" alt="Lente Femenino">
+    </div>
+    <h4>Cuadrada Negro Clásico</h4>
+    <span class="precio">Bs 225.00</span>
+</article>
+<!-- Producto 6 -->
+<article class="car-catalogo">
+    <div class="caja-img">
+        <img src="img/gafas-unisex/005.webp" alt="Lente Femenino">
+    </div>
+    <h4>Circular Gris Azulado</h4>
+    <span class="precio">Bs 235.00</span>
+</article>
+    
+=======
+    
+    <section class="class-section">
+        
+        <h2 class="titulo-apartado">Colección Varones</h2>
 
-        <!-- Contenedor de las 5 Cards -->
-        <div class="contenedor-productos">
+        <div class="grid-principal"> 
             
-            <!-- Card 1 -->
-            <article class="card-producto">
-                <div class="img-container">
-                    <img src="img\gafas-mujeres\118-ROSADA-NEGRA.webp" alt="Montura para mujer">
+            <article class="class-catalogo">
+                <div class="caja-img">
+                    <img src="img/gafas-varones/61-azul-verde.webp" alt="Lente Masculino">
                 </div>
-                <h4>MONTURAS</h4>
+                <h3>SKYLINE NAVY</h3>
+                <span class="precio">Bs 245.00</span>
             </article>
 
-            <!-- Card 2 -->
-            <article class="card-producto">
-                <div class="img-container">
-                    <img src="img\gafas-mujeres\123-ROSADO.webp" alt="Gafas de sol">
+            <article class="class-catalogo">
+                <div class="caja-img">
+                    <img src="img/gafas-unisex/004.webp" alt="Lente Masculino">
                 </div>
-                <h4>GAFAS</h4>
+                <h3>VINTAGE BROWN</h3>
+                <span class="precio">Bs 260.00</span>
             </article>
 
-            <!-- Card 3 -->
-            <article class="card-producto">
-                <div class="img-container">
-                    <img src="img\gafas-mujeres\90-ROJO.webp" alt="Clip-on 2 en 1">
+            <article class="class-catalogo">
+                <div class="caja-img">
+                    <img src="img/gafas-varones/SATELLITE-PLATA-NEGRA.webp" alt="Lente Masculino">
                 </div>
-                <h4>CLIP-ON 2 EN 1</h4>
+                <h3>SATELLITE SILVER</h3>
+                <span class="precio">Bs 270.00</span>
             </article>
 
-            <!-- Card 4 -->
-            <article class="card-producto">
-                <div class="img-container">
-                    <img src="img\gafas-mujeres\90ROJO.webp" alt="Montura tendencia">
+            <article class="class-catalogo">
+                <div class="caja-img">
+                    <img src="img/gafas-varones/negros.webp" alt="Lente Masculino">
                 </div>
-                <h4>TENDENCIAS</h4>
+                <h3>DARK CITY</h3>
+                <span class="precio">Bs 215.00</span>
             </article>
 
-            <!-- Card 5 -->
-            <article class="card-producto">
-                <div class="img-container">
-                    <img src="img\gafas-mujeres\nego.webp" alt="Colección Premium">
+            <article class="class-catalogo">
+                <div class="caja-img">
+                    <img src="img/gafas-varones/WESTON-DORADA-CAFE.webp" alt="Lente Masculino">
                 </div>
-                <h4>PREMIUM</h4>
+                <h3>GOLDEN WESTON</h3>
+                <span class="precio">Bs 290.00</span>
             </article>
 
         </div>
     </section>
 
+</main>
+>>>>>>> Stashed changes
 
+</main>
 
-<!-- FOOTER -->
-<footer class="pie">
+<footer>
+    <div class="pie">
+        <div class="pie-contenedor">
+            <div class="pie-columna-info">
+                <h3>ÓPTICA TENDENCIA URBANA</h3>
+                <p>Lentes modernos, calidad garantizada y estilo urbano.</p>
+            </div>
 
-    <div class="pie-contenedor">
+            <div class="pie-columna">
+                <h4>TIENDA</h4>
+<<<<<<< Updated upstream
+                <a href="catalogo-INFANTIL.html">Catálogo</a>
+=======
+                <a href="catalogo.html">Catálogo</a>
+>>>>>>> Stashed changes
+                <a href="#">Novedades</a>
+                <a href="#">Ofertas</a>
+            </div>
 
-        <div class="pie-columna">
-            <h3>ÓPTICA POUKER</h3>
-            <p>Tu mejor opción en lentes de calidad.</p>
-        </div>
+            <div class="pie-columna">
+                <h4>AYUDA</h4>
+                <a href="#">Contacto</a>
+                <a href="#">Envíos</a>
+                <a href="#">Devoluciones</a>
+            </div>
 
-        <div class="pie-columna">
-            <h4>ENLACES</h4>
-            <a href="#">Inicio</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="../Contacto/coontacto.html">Contacto</a>
-        </div>
-
-        <div class="pie-columna">
-            <h4>SUSCRÍBETE</h4>
-            <p>Recibe ofertas y novedades</p>
-
-            <div class="suscripcion">
-                <input type="email" placeholder="correo@gmail.com">
-                <button>Suscribir</button>
+            <div class="pie-columna-suscripcion">
+                <h4>SUSCRÍBETE</h4>
+                <div class="suscripcion-formulario">
+                    <input type="email" placeholder="prueba@gmail.com">
+                    <button type="button">OK</button>
+                </div>
             </div>
         </div>
-
+        <div class="pie-inferior">
+            <p>&copy; 2026 Óptica Tendencia Urbana</p>
+        </div>
     </div>
-
-    <div class="pie-inferior">
-        <p>© 2026 Óptica Pouker</p>
-    </div>
-
 </footer>
+<!-- Contenedor único para la lupa/zoom -->
+<div id="modal-lupa" class="modal-zoom">
+    <span class="cerrar-lupa">&times;</span>
+    <div class="contenedor-lupa">
+        <img id="imagen-zoom" src="" alt="Vista previa">
+    </div>
+</div>
+<script src="inicio.js/catalogo.js"></script>
+<script src="inicio.js/inicio.js"></script>
+
+<!-- Contenedor único para la lupa/zoom -->
+<div id="modal-lupa" class="modal-zoom">
+    <span class="cerrar-lupa">&times;</span>
+    <div class="contenedor-lupa">
+        <img id="imagen-zoom" src="" alt="Vista previa">
+    </div>
+</div>
+
+<script src="inicio.js/inicio.js"></script>
+<script src="inicio.js/catalogo.js"></script>
 
 </body>
 </html>
+

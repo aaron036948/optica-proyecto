@@ -48,37 +48,7 @@ window.onload = function () {
     // 👉 BOTONES DE NAVEGACIÓN (Scroll suave y cambio de slider opcional)
     const allInteractiveButtons = [...categoryButtons, ...topButtons];
     
-    allInteractiveButtons.forEach((btn, i) => {
-        btn.onclick = function (e) {
-            const text = btn.innerText.toUpperCase().trim();
-            let targetId = "";
-
-            // Mapeo de texto a ID de sección para scroll suave
-            if (text.includes("MUJERES") || text.includes("FEMENINO")) targetId = "seccion-mujeres";
-            else if (text.includes("MASCULINO") || text.includes("VARONES")) targetId = "seccion-varones";
-            else if (text.includes("NIÑAS")) targetId = "seccion-ninas";
-            else if (text.includes("NIÑOS") || text.includes("INFANTIL")) targetId = "seccion-ninos";
-            else if (text.includes("CATÁLOGO")) targetId = "seccion-catalogo";
-            else if (text.includes("INICIO")) {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: "smooth" });
-                return;
-            }
-
-            // Si hay un target de sección, hacemos scroll suave
-            if (targetId) {
-                e.preventDefault();
-                const targetElement = document.getElementById(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80, 
-                        behavior: "smooth"
-                    });
-                }
-                return;
-            }
-        };
-    });
+    
 
     // Iniciar rotación automática
     startAutoPlay();

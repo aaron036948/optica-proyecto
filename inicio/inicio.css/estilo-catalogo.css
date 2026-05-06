@@ -1,228 +1,450 @@
-/* ===================================================
-   1. ESTILOS BASE Y RESET (UNIFICADOS CON EL CLON)
-   =================================================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Centrado general de secciones */
-section {
+<<<<<<< Updated upstream
+/* RESET DE SECCIÓN */
+#catalogo-ninos, #catalogo-mujeres, #catalogo-varones, #catalogo-ninas {
+    padding: 60px 5%;
     max-width: 1200px;
-    margin: 10px auto;
-    padding: 0 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
     text-align: center;
 }
-
-h2, h3, h4 {
-    color: #333;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-.logo, 
-.banner-categoria h2, 
-.texto-banner-masc h2, 
-.texto-banner-kids h2 {
-    color: #FF0400; /* Rojo corporativo del clon[cite: 1] */
-}
-
-/* Banners de cabecera */
-.banner-categoria img, 
-.banner-masculino img, 
-.banner-infantil img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.descripcion-filtros, 
-.info-filtro-hombres, 
-.info-filtro-ninos {
-    max-width: 800px;
+/* INTRO DE CADA GÉNERO */
+.intro-seccion {
     margin-bottom: 40px;
 }
 
-/* ===================================================
-   2. GRILLA DE PRODUCTOS (DESKTOP)
-   =================================================== */
-#todocata,
-.contenedor-productos, 
-.grid-productos-hombres, 
-.grid-productos-ninos {
-    display: flex;             /* Siempre activo, no solo en hover */
-    flex-wrap: wrap;           /* Permite que bajen si no caben */
-    justify-content: center;
-    gap: 15px 30px;
-    width: 100%;
-    padding: 10px 0;
+.intro-seccion h2 {
+    color: #FF0400; /* Rojo corporativo */
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 900;
 }
 
-/* Estilo unificado para todas las Cards */
-.card-producto, 
-.item-producto-masc, 
-.item-producto-kids,
-.catalogo1, .catalogo2, .catalogo3, 
-.catalogo4, .catalogo5, .catalogo6 {
-    flex: 0 1 calc(33.333% - 30px);
-    min-width: 250px;
+.intro-seccion p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* CONTENEDOR GRID */
+.contenedor-grid {
+    display: grid;
+    /* Ajuste automático de columnas[cite: 11] */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+/* LA CLASE SOLICITADA: car-catalogo */
+.car-catalogo {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombreado suave[cite: 7] */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    height: auto !important; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-decoration: none; /* Asegura que no haya líneas de link */
 }
 
-.link-card {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    width: 100%; /* Asegura que cubra toda la tarjeta */
+.car-catalogo:hover {
+    transform: translateY(-10px); /* Elevación al pasar el mouse */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-color: #FF0400;
 }
 
-.card-producto:hover, 
-.item-producto-masc:hover, 
-.item-producto-kids:hover,
-.catalogo1:hover, .catalogo2:hover, .catalogo3:hover, 
-.catalogo4:hover, .catalogo5:hover, .catalogo6:hover {
-    transform: translateY(-10px); 
-    cursor: pointer;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
-}
-
-.card-producto:hover, 
-.item-producto-kids:hover, 
-.item-producto-masc:hover {
-    transform: translateY(-5px);
-}
-
-/* Imágenes dentro de las Cards */
-.img-container img, 
-.caja-imagen img, 
-.caja-img-kids img,
-[class^="catalogo"] img {
+.car-catalogo .caja-img {
     width: 100%;
-    height: auto;
-    max-height: 150px;
-    object-fit: contain;
-    margin-bottom: 1px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
-/* Títulos de las Cards */
-.card-producto h4, 
-.item-producto-masc h4, 
-.item-producto-kids h4,
-[class^="catalogo"] h3 {
-    text-decoration: none !important;
-    font-size: 14px;
+.car-catalogo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* No deforma el lente[cite: 11] */
+}
+
+.car-catalogo h4 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.car-catalogo .precio {
     font-weight: bold;
-    color: #333; /* Color gris oscuro del clon[cite: 1] */
-    margin-top: 10px;
+    color: #FF0400;
+    font-size: 1.2rem;
+=======
+/* ===================================================
+   HOJA DE ESTILOS EXCLUSIVA PARA LAS CLASES DE LAS CARDS
+   =================================================== */
+
+/* Contenedor principal de la sección */
+.class-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif; /* Fuente del clon */
+    background-color: #ffffff;
+}
+
+/* Títulos con barra lateral roja característica */
+.class-section .titulo-apartado {
+    text-align: left;
+    font-size: 26px;
+    color: #001a41; /* Azul oscuro institucional */
+    margin: 30px 0 25px 0;
+    border-left: 5px solid #FF0400; /* Rojo corporativo */
+    padding-left: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Grillas responsivas para las tarjetas y apartados especiales */
+.class-section .grid-principal,
+.class-section .apartado-especial {
+    display: grid;
+    /* Configurado para 2 columnas grandes en PC o 1 en móvil */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* LA CARD (Clase: class-catalogo) - Estilo Horizontal */
+.class-catalogo {
+    display: flex; 
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    position: relative;
+    border: 1px solid #e1e8ef;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombreado solicitado */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-decoration: none;
+    min-height: 160px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* EFECTO HOVER Y SOMBREADO DINÁMICO */
+.class-catalogo:hover {
+    transform: translateY(-8px); /* Elevación */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15); /* Sombreado profundo */
+    border-color: #FF0400; /* Cambio a rojo al pasar el mouse */
+}
+
+/* Contenedor de la imagen dentro de la Card */
+.class-catalogo img {
+    width: 150px;
+    height: 110px;
+    object-fit: contain; /* Evita deformación */
+    margin-right: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Zoom suave a la imagen en Hover */
+.class-catalogo:hover img {
+    transform: scale(1.1);
+}
+
+/* Etiquetas de Oferta/Rebaja del catálogo principal */
+.etiqueta-oferta, .etiqueta-rebaja {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #FF0400;
+    color: white;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.etiqueta-rebaja {
+    background: #333; /* Gris oscuro para diferenciar de ofertas */
+}
+
+/* Estilo del Nombre del Producto (Letras grandes) */
+.class-catalogo h3 {
+    flex: 2;
+    font-size: 18px; /* Tamaño aumentado para visibilidad */
+    color: #001a41;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Estilo del Precio (Números grandes y rojos) */
+.class-catalogo .precio {
+    flex: 1;
+    font-size: 22px; /* Números resaltados */
+    font-weight: 800;
+    color: #FF0400;
+    text-align: right;
+>>>>>>> Stashed changes
+}
+/* ===================================================
+<<<<<<< Updated upstream
+   CONFIGURACIÓN DE RESPONSIVIDAD CON TEXTO AMPLIADO
+   =================================================== */
+
+/* 1. PC / MONITORES GRANDES (Desktop: +1200px) */
+@media (min-width: 1201px) {
+    body { font-size: 18px; } /* Incrementado para una lectura más cómoda */
+    .intro-seccion h2 { font-size: 2.5rem; }
+    .intro-seccion p { font-size: 1.2rem; }
+    .car-catalogo h4 { font-size: 1.2rem; }
+    .car-catalogo .precio { font-size: 1.4rem; }
+}
+
+/* 2. LAPTOPS Y PANTALLAS MEDIANAS (1025px - 1200px) */
+@media (max-width: 1200px) {
+    body { font-size: 18.5px; } 
+    .intro-seccion h2 { font-size: 2.3rem; }
+    .intro-seccion p { font-size: 1.25rem; }
+    .car-catalogo h4 { font-size: 1.15rem; }
+    .car-catalogo .precio { font-size: 1.35rem; }
+    .contenedor-grid { grid-template-columns: repeat(3, 1fr); } 
+}
+
+/* 3. TABLETS E IPADS (769px - 1024px) */
+@media (max-width: 1024px) {
+    body { font-size: 19px; } 
+    .intro-seccion h2 { font-size: 2.1rem; }
+    .intro-seccion p { font-size: 1.3rem; }
+    .car-catalogo h4 { font-size: 1.2rem; }
+    .car-catalogo .precio { font-size: 1.45rem; }
+    .contenedor-grid { 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        gap: 30px;
+    }
+}
+
+/* 4. DISPOSITIVOS MÓVILES (Celulares: hasta 768px) */
+@media (max-width: 768px) {
+    body { 
+        font-size: 20px; /* Tamaño maximizado para pantallas pequeñas */
+        padding-top: 100px; /* Espacio para el header móvil[cite: 8, 9] */
+    }
+    .intro-seccion h2 { 
+        font-size: 2rem; 
+        line-height: 1.1;
+    }
+    .intro-seccion p { 
+        font-size: 1.4rem; 
+    }
+    .contenedor-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 25px;
+    }
+    .car-catalogo { padding: 20px; }
+    .car-catalogo h4 { font-size: 1.3rem; }
+    .car-catalogo .precio { 
+        font-size: 1.6rem; /* Precio resaltado para el usuario */
+        margin-top: 10px;
+    }
 }
 
 /* ===================================================
-   3. CORRECCIÓN PARA EL FOOTER (FORZAR COLOR BLANCO)
+   AJUSTES GENERALES DE VISIBILIDAD
    =================================================== */
-.pie, 
-.pie h3, 
-.pie h4, 
-.pie p, 
-.pie a {
-    color: #ffffff !important;
+.car-catalogo .precio {
+    font-weight: 800; /* Grosor extra para que los números resalten */
+    color: #FF0400; /* Rojo corporativo para el precio[cite: 7] */
+    display: block;
+}
+
+.car-catalogo h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+/* Fondo oscuro del modal */
+.modal-zoom {
+    display: none;
+    position: fixed;
+    z-index: 3000; /* Por encima del header[cite: 8] */
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor que permite el recorte del zoom */
+.contenedor-lupa {
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    cursor: zoom-in;
+    border-radius: 10px;
+    background: white;
+}
+
+#imagen-zoom {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+/* Efecto de Lupa al pasar el mouse sobre la imagen grande */
+.contenedor-lupa:hover #imagen-zoom {
+    transform: scale(2); /* Zoom de 2x */
+=======
+   HOJA DE ESTILOS CON RESPONSIVIDAD ESCALADA
+   =================================================== */
+
+/* --- 1. PC Y MONITORES GRANDES (+1201px) --- */
+@media (min-width: 1201px) {
+    body { font-size: 18px; } 
+    .class-section .titulo-apartado { font-size: 28px; }
+    .class-catalogo h3 { font-size: 19px; }
+    .class-catalogo .precio { font-size: 23px; }
+}
+
+/* --- 2. LAPTOPS Y PANTALLAS MEDIANAS (1025px - 1200px) --- */
+@media (max-width: 1200px) {
+    body { font-size: 16px; } /* Se mantiene el estándar del clon */
+    .class-section .titulo-apartado { font-size: 26px; }
+    .class-catalogo h3 { font-size: 18px; }
+    .class-catalogo .precio { font-size: 22px; }
+}
+
+/* --- 3. IPADS Y TABLETS (401px - 1024px) --- */
+/* Nota: Se amplía el rango para cubrir los 700px solicitados */
+@media (max-width: 1024px) {
+    body { font-size: 19px; } /* Incremento suave */
+    .class-section .titulo-apartado { font-size: 27px; }
+    .class-catalogo h3 { font-size: 20px; }
+    .class-catalogo .precio { font-size: 24px; }
+    
+    .class-section .grid-principal,
+    .class-section .apartado-especial {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+/* --- 4. DISPOSITIVOS MÓVILES (Hasta 400px) --- */
+@media (max-width: 400px) {
+    body { font-size: 21px; } /* Fuente más grande para pantallas pequeñas */
+    .class-section .titulo-apartado { font-size: 28px; }
+    .class-catalogo h3 { font-size: 22px; }
+    .class-catalogo .precio { font-size: 26px; }
+
+    /* Ajuste de tarjetas a vertical completa */
+    .class-catalogo {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .class-catalogo img {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+        max-width: 180px;
+    }
+}
+
+/* ===================================================
+   ESTILOS BASE (Mantenidos para coherencia)
+   =================================================== */
+.class-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.class-section .titulo-apartado {
+    text-align: left;
+    color: #001a41;
+    border-left: 5px solid #FF0400;
+    padding-left: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.class-catalogo {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    position: relative;
+    border: 1px solid #e1e8ef;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
     text-decoration: none;
 }
 
-/* ===================================================
-   4. RESPONSIVIDAD (MEDIA QUERIES)
-   =================================================== */
-
-/* PANTALLAS GRANDES (> 1200px) */
-@media (min-width: 1200px) {
-    body { font-size: 18px; }
-    section { max-width: 1400px; }
-    .card-producto h4, [class^="catalogo"] h3 { font-size: 16px; }
+.class-catalogo:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    border-color: #FF0400;
 }
 
-/* TABLETS (max-width: 768px) */
-@media (max-width: 768px) {
-    body { font-size: 15px; }
-    .banner-categoria img { max-height: 300px; }
-    
-    .card-producto, 
-    .item-producto-masc, 
-    .item-producto-kids,
-    [class^="catalogo"] {
-        flex: 0 1 calc(50% - 20px); 
-        min-width: 200px;
-    }
+.class-catalogo .precio {
+    color: #FF0400;
+    font-weight: 800;
 }
 
-/* MÓVILES (480px) */
-@media (max-width: 480px) {
-    
-    /* 1. Forzamos al contenedor a ser una columna vertical */
-    #todocata, 
-    .contenedor-productos, 
-    .grid-productos-hombres, 
-    .grid-productos-ninos {
-        display: flex !important;
-        flex-direction: column !important; /* Pone una card debajo de otra */
-        align-items: center !important;    /* Centra las cards[cite: 7] */
-        height: auto !important;           /* Elimina el estiramiento vertical */
-        gap: 30px !important;              /* Espacio cómodo entre productos */
-        padding: 20px 0 !important;
-    }
+/* MODAL DE LUPA */
+.modal-zoom {
+    display: none;
+    position: fixed;
+    z-index: 3000; /* Asegura que esté por encima de todo [cite: 8] */
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
 
-    /* 2. Ajustamos las cards para que ocupen el ancho de la pantalla */
-    .card-producto, 
-    .item-producto-masc, 
-    .item-producto-kids,
-    [class^="catalogo"] {
-        flex: none !important;             /* Desactiva el cálculo flexible */
-        width: 90% !important;             /* Ocupa casi todo el ancho del celular */
-        max-width: 320px !important;       /* Evita que se vea gigante en tablets pequeñas */
-        height: auto !important;           /* La caja solo mide lo que mide su contenido */
-        min-height: unset !important;
-        padding: 15px !important;
-        border: 1px solid #eee;            /* Opcional: para darles forma de tarjeta */
-        border-radius: 8px;
-    }
+.contenedor-lupa {
+    width: 90%;
+    max-width: 700px;
+    overflow: hidden; /* Necesario para que el zoom no se salga del cuadro */
+    background: #fff;
+    border-radius: 10px;
+    cursor: zoom-in;
+}
 
-    /* 3. Ajustamos el tamaño de las letras para que sean legibles */
-    .card-producto h4, 
-    .item-producto-masc h4, 
-    .item-producto-kids h4,
-    [class^="catalogo"] h3 {
-        font-size: 18px !important;        /* Aumentamos el tamaño de la letra */
-        margin-top: 15px !important;
-        text-align: center !important;
-    }
+#imagen-zoom {
+    width: 100%;
+    transition: transform 0.4s ease;
+    display: block;
+}
 
-    /* 4. Ajuste de imágenes para que recuperen su forma */
-    .img-container img, 
-    .caja-imagen img, 
-    .caja-img-kids img,
-    [class^="catalogo"] img {
-        width: 100% !important;
-        height: auto !important;
-        max-height: 200px !important;      /* Tamaño adecuado para el lente[cite: 7] */
-        object-fit: contain !important;
-    }
+/* EFECTO LUPA: Zoom 2x al pasar el mouse por la imagen del modal */
+.contenedor-lupa:hover #imagen-zoom {
+    transform: scale(2);
+>>>>>>> Stashed changes
+}
+
+.cerrar-lupa {
+    position: absolute;
+<<<<<<< Updated upstream
+    top: 20px; right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+=======
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+>>>>>>> Stashed changes
 }
