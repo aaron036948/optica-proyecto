@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* RESET DE SECCIÓN */
 #catalogo-ninos, #catalogo-mujeres, #catalogo-varones, #catalogo-ninas {
     padding: 60px 5%;
@@ -78,8 +79,121 @@
     font-weight: bold;
     color: #FF0400;
     font-size: 1.2rem;
+=======
+/* ===================================================
+   HOJA DE ESTILOS EXCLUSIVA PARA LAS CLASES DE LAS CARDS
+   =================================================== */
+
+/* Contenedor principal de la sección */
+.class-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif; /* Fuente del clon */
+    background-color: #ffffff;
+}
+
+/* Títulos con barra lateral roja característica */
+.class-section .titulo-apartado {
+    text-align: left;
+    font-size: 26px;
+    color: #001a41; /* Azul oscuro institucional */
+    margin: 30px 0 25px 0;
+    border-left: 5px solid #FF0400; /* Rojo corporativo */
+    padding-left: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Grillas responsivas para las tarjetas y apartados especiales */
+.class-section .grid-principal,
+.class-section .apartado-especial {
+    display: grid;
+    /* Configurado para 2 columnas grandes en PC o 1 en móvil */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+/* LA CARD (Clase: class-catalogo) - Estilo Horizontal */
+.class-catalogo {
+    display: flex; 
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    position: relative;
+    border: 1px solid #e1e8ef;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombreado solicitado */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-decoration: none;
+    min-height: 160px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* EFECTO HOVER Y SOMBREADO DINÁMICO */
+.class-catalogo:hover {
+    transform: translateY(-8px); /* Elevación */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15); /* Sombreado profundo */
+    border-color: #FF0400; /* Cambio a rojo al pasar el mouse */
+}
+
+/* Contenedor de la imagen dentro de la Card */
+.class-catalogo img {
+    width: 150px;
+    height: 110px;
+    object-fit: contain; /* Evita deformación */
+    margin-right: 25px;
+    transition: transform 0.4s ease;
+}
+
+/* Zoom suave a la imagen en Hover */
+.class-catalogo:hover img {
+    transform: scale(1.1);
+}
+
+/* Etiquetas de Oferta/Rebaja del catálogo principal */
+.etiqueta-oferta, .etiqueta-rebaja {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #FF0400;
+    color: white;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.etiqueta-rebaja {
+    background: #333; /* Gris oscuro para diferenciar de ofertas */
+}
+
+/* Estilo del Nombre del Producto (Letras grandes) */
+.class-catalogo h3 {
+    flex: 2;
+    font-size: 18px; /* Tamaño aumentado para visibilidad */
+    color: #001a41;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Estilo del Precio (Números grandes y rojos) */
+.class-catalogo .precio {
+    flex: 1;
+    font-size: 22px; /* Números resaltados */
+    font-weight: 800;
+    color: #FF0400;
+    text-align: right;
+>>>>>>> Stashed changes
 }
 /* ===================================================
+<<<<<<< Updated upstream
    CONFIGURACIÓN DE RESPONSIVIDAD CON TEXTO AMPLIADO
    =================================================== */
 
@@ -185,12 +299,152 @@
 /* Efecto de Lupa al pasar el mouse sobre la imagen grande */
 .contenedor-lupa:hover #imagen-zoom {
     transform: scale(2); /* Zoom de 2x */
+=======
+   HOJA DE ESTILOS CON RESPONSIVIDAD ESCALADA
+   =================================================== */
+
+/* --- 1. PC Y MONITORES GRANDES (+1201px) --- */
+@media (min-width: 1201px) {
+    body { font-size: 18px; } 
+    .class-section .titulo-apartado { font-size: 28px; }
+    .class-catalogo h3 { font-size: 19px; }
+    .class-catalogo .precio { font-size: 23px; }
+}
+
+/* --- 2. LAPTOPS Y PANTALLAS MEDIANAS (1025px - 1200px) --- */
+@media (max-width: 1200px) {
+    body { font-size: 16px; } /* Se mantiene el estándar del clon */
+    .class-section .titulo-apartado { font-size: 26px; }
+    .class-catalogo h3 { font-size: 18px; }
+    .class-catalogo .precio { font-size: 22px; }
+}
+
+/* --- 3. IPADS Y TABLETS (401px - 1024px) --- */
+/* Nota: Se amplía el rango para cubrir los 700px solicitados */
+@media (max-width: 1024px) {
+    body { font-size: 19px; } /* Incremento suave */
+    .class-section .titulo-apartado { font-size: 27px; }
+    .class-catalogo h3 { font-size: 20px; }
+    .class-catalogo .precio { font-size: 24px; }
+    
+    .class-section .grid-principal,
+    .class-section .apartado-especial {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+/* --- 4. DISPOSITIVOS MÓVILES (Hasta 400px) --- */
+@media (max-width: 400px) {
+    body { font-size: 21px; } /* Fuente más grande para pantallas pequeñas */
+    .class-section .titulo-apartado { font-size: 28px; }
+    .class-catalogo h3 { font-size: 22px; }
+    .class-catalogo .precio { font-size: 26px; }
+
+    /* Ajuste de tarjetas a vertical completa */
+    .class-catalogo {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .class-catalogo img {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+        max-width: 180px;
+    }
+}
+
+/* ===================================================
+   ESTILOS BASE (Mantenidos para coherencia)
+   =================================================== */
+.class-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.class-section .titulo-apartado {
+    text-align: left;
+    color: #001a41;
+    border-left: 5px solid #FF0400;
+    padding-left: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.class-catalogo {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    position: relative;
+    border: 1px solid #e1e8ef;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+.class-catalogo:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    border-color: #FF0400;
+}
+
+.class-catalogo .precio {
+    color: #FF0400;
+    font-weight: 800;
+}
+
+/* MODAL DE LUPA */
+.modal-zoom {
+    display: none;
+    position: fixed;
+    z-index: 3000; /* Asegura que esté por encima de todo [cite: 8] */
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-lupa {
+    width: 90%;
+    max-width: 700px;
+    overflow: hidden; /* Necesario para que el zoom no se salga del cuadro */
+    background: #fff;
+    border-radius: 10px;
+    cursor: zoom-in;
+}
+
+#imagen-zoom {
+    width: 100%;
+    transition: transform 0.4s ease;
+    display: block;
+}
+
+/* EFECTO LUPA: Zoom 2x al pasar el mouse por la imagen del modal */
+.contenedor-lupa:hover #imagen-zoom {
+    transform: scale(2);
+>>>>>>> Stashed changes
 }
 
 .cerrar-lupa {
     position: absolute;
+<<<<<<< Updated upstream
     top: 20px; right: 35px;
     color: white;
     font-size: 40px;
     cursor: pointer;
+=======
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+>>>>>>> Stashed changes
 }

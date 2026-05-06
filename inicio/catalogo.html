@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="inicio.css/slider.css">
     <link rel="stylesheet" href="inicio.css/footer.css">
     <link rel="stylesheet" href="inicio.css/responcividad.css">
+    <link rel="stylesheet" href="inicio.css/estilo-catalogo.css">
 </head>
 
 <body>
@@ -31,15 +32,12 @@
             </nav>
             <nav class="menu-extra">
                 <a href="#">Inicio</a>
-<<<<<<< Updated upstream
-                <a href="catalogo-INFANTIL.html">Catálogo</a>
-=======
                 <a href="catalogo.html">Catálogo</a>
->>>>>>> Stashed changes
                 <a href="#">Contacto</a>
                 <a href="#">Buscar</a>
             </nav>
 
+           
             <nav class="redes-sociales-movil">
                 <a href="#"><img src="iconos/instagram.png" alt="Instagram"></a>
                 <a href="#"><img src="iconos/facebook.png" alt="Facebook"></a>
@@ -91,7 +89,9 @@
 
         <div class="iconos">
             <img src="iconos/favorito.png">
-            <img src="iconos/login.png">
+            <a href="login.html">
+                <img src="iconos/login.png">
+            </a>
             <img src="iconos/compra.png">
         </div>
 
@@ -111,120 +111,69 @@
 <main class="contenedor-principal">
     
 
-    <section class="seccion-catalogo" id="seccion-catalogo">
-        <h2 class="titulo-seccion">CATÁLOGO</h2>
-        <div class="grid-categorias-inicio">
-            <div class="categoria-item">
-                <a href="catalogo-INFANTIL.html">
-                <img src="img/gafas-ninos/0001.webp" alt="Niños">
-                <span>NIÑOS</span>
-                </a>
-            </div>
-            <div class="categoria-item">
-                <a href="catalogo-nina.html">
-                <img src="img/gafas-ninos/0002.webp" alt="Niñas">
-                <span>NIÑAS</span>
-                </a>
-            </div>
-            <div class="categoria-item">
-                <a href="catalogo-FEMENINO.html">
-                <img src="img/gafas-mujeres/118-ROSADA-NEGRA.webp" alt="Mujeres">
-                <span>MUJERES</span>
-                </a>
-            </div>
-            <div class="categoria-item">
-                <a href="catalogo-MASCULINO.html">
-                <img src="img/gafas-varones/negros.webp" alt="Varones">
-                <span>VARONES</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
+  <!-- SECCIÓN DE CATÁLOGO COMPLETO -->
+<section id="todocata" class="class-section">
     
-    <section class="seccion-info">
-        <h2 class="titulo-seccion">¿Por qué escoger Óptica Tendencia Urbana?</h2>
-        <div class="info-contenido">
-            <p>En Óptica Tendencia Urbana nos comprometemos con tu salud visual ofreciendo tecnología de punta, diseños exclusivos y una atención personalizada que garantiza la mejor solución para tus ojos.</p>
-        </div>
-    </section>
+    <!-- APARTADO: OFERTAS -->
+    <h2 class="titulo-apartado">Grandes Novedades</h2>
+    <div class="apartado-especial grid-ofertas">
+        <article class="class-catalogo">
+            <img src="img/gafas-unisex/001.webp" alt="Lente en Oferta">
+            <div class="etiqueta-oferta">OFERTA -50%</div>
+            <h3>URBAN STYLE</h3>
+        </article>
+        <article class="class-catalogo">
+            <img src="img/gafas-unisex/003.webp" alt="Lente en Oferta">
+            <div class="etiqueta-oferta">OFERTA -45%</div>
+            <h3>CITY LIGHTS</h3>
+        </article>
+        <article class="class-catalogo">
+            <img src="img/gafas-unisex/005.webp" alt="Lente en Oferta">
+            <div class="etiqueta-oferta">OFERTA -45%</div>
+            <h3>NIGHT DRIVE</h3>
+        </article>
+    </div>
 
-  
-    <!--  SECCIÓN mujeres -->
-    <section class="seccion-productos" id="seccion-mujeres">
-        <h2 class="titulo-seccion">MUJERES</h2>
-        <div class="grid-productos">
-            <div class="producto-card">
-                <img src="img/gafas-mujeres/118-ROSADA-NEGRA.webp">
-                <p class="precio">Bs 120.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-mujeres/123-ROSADO.webp">
-                <p class="precio">Bs 135.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-mujeres/90-ROJO.webp">
-                <p class="precio">Bs  110.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-mujeres/90ROJO.webp">
-                <p class="precio">Bs 115.00</p>
-            </div>
-        </div>
-    </section>
+    <!-- APARTADO: EN REBAJA -->
+    <h2 class="titulo-apartado">Ofertas</h2>
+    <div class="apartado-especial grid-rebajas">
+        <article class="class-catalogo">
+            <img src="img/gafas-varones/negros.webp" alt="Lente en Rebaja">
+            <div class="etiqueta-rebaja">REBAJA</div>
+            <h3>CLASSIC BLACK</h3>
+        </article>
+        <article class="class-catalogo">
+            <img src="img/gafas-mujeres/90ROJO.webp" alt="Lente en Rebaja">
+            <div class="etiqueta-rebaja">REBAJA</div>
+            <h3>RED PASSION</h3>
+        </article>
+    </div>
 
-    <!--  SECCIÓN VARONES -->
-    <section class="seccion-productos" id="seccion-varones">
-        <h2 class="titulo-seccion">VARONES</h2>
-        <div class="grid-productos">
-            <div class="producto-card">
-                <img src="img/gafas-varones/61-azul-verde.webp">
-                <p class="precio">Bs 140.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-varones/SATELLITE-PLATA-NEGRA.webp">
-                <p class="precio">Bs 160.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-varones/WESTON-DORADA-CAFE.webp">
-                <p class="precio">Bs 155.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-varones/negros.webp">
-                <p class="precio">Bs 130.00</p>
-            </div>
-        </div>
-    </section>
+    <hr class="separador-seccion">
 
-    <!--  SECCIÓN NIÑAS -->
-    <section class="seccion-productos" id="seccion-ninas">
-        <h2 class="titulo-seccion">NIÑAS</h2>
-        <div class="grid-productos">
-            <div class="producto-card">
-                <img src="img/gafas-ninos/0001.webp">
-                <p class="precio">Bs 285.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-ninos/0002.webp">
-                <p class="precio">Bs 290.00</p>
-            </div>
+    <!-- GRILLA DE COLECCIONES -->
+    <h2 class="titulo-apartado">Nuestras Colecciones</h2>
+    <div class="grid-principal">
+        <div class="class-catalogo">
+            <a class="link-card" href="catalogo-MASCULINO.html">
+                <img src="img/gafas-varones/WESTON-DORADA-CAFE.webp" alt="Gafas para Hombres">
+                <h3>HOMBRES</h3>
+            </a>
         </div>
-    </section>
-
-    <!--  SECCIÓN NIÑOS -->
-    <section class="seccion-productos" id="seccion-ninos">
-        <h2 class="titulo-seccion">NIÑOS</h2>
-        <div class="grid-productos">
-            <div class="producto-card">
-                <img src="img/gafas-ninos/0003.webp">
-                <p class="precio">Bs 185.00</p>
-            </div>
-            <div class="producto-card">
-                <img src="img/gafas-ninos/0004.webp">
-                <p class="precio">Bs 180.00</p>
-            </div>
+        <div class="class-catalogo">
+            <a class="link-card" href="catalogo-FEMENINO.html">
+                <img src="img/gafas-mujeres/90-ROJO.webp" alt="Gafas para Mujeres">
+                <h3>MUJERES</h3>
+            </a>
         </div>
-    </section>
+        <div class="class-catalogo">
+            <a class="link-card" href="catalogo-INFANTIL.html">
+                <img src="img/gafas-ninos/0004.webp" alt="Gafas Infantiles">
+                <h3>INFANTILES</h3>
+            </a>
+        </div>
+    </div>
+</section>
 
 </main>
 
@@ -238,11 +187,7 @@
 
             <div class="pie-columna">
                 <h4>TIENDA</h4>
-<<<<<<< Updated upstream
-                <a href="catalogo-INFANTIL.html">Catálogo</a>
-=======
                 <a href="catalogo.html">Catálogo</a>
->>>>>>> Stashed changes
                 <a href="#">Novedades</a>
                 <a href="#">Ofertas</a>
             </div>
